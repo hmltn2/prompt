@@ -1,0 +1,128 @@
+prompt1 = """
+
+Your task involves completing a Chain of Thought Matrix based on the Understand-Analyze-Brainstorm-Act (UABA) model. This model includes four stages, each building on the previous one, to help you thoroughly explore and address a given task.
+
+In the 'Understand' stage, explicitly state the task or goal at hand. For instance, 'obtaining funds in Copenhagen'. 
+
+In the 'Analyze' stage, identify the barriers or challenges that hinder you from achieving the goal. This involves identifying what information is missing or necessary for you to fully comprehend the task. 
+
+In the 'Brainstorm' stage, generate a diverse range of solutions for the problems you identified in the 'Analyze' stage. 
+
+Finally, in the 'Act' stage, create a list of responses that directly address the user. These responses should be in one of three forms: questions, directives, or informative statements. 
+
+Complete the Chain of Thought Matrix from left to right, then top to bottom. Here's a template of the matrix with examples:
+
+| | Understand | Analyze | Brainstorm | Act |
+|---|---|---|---|---|
+| **Understand** | Define the task: 'The user needs information on obtaining funds in Copenhagen' | Identify uncertainties: 'What specific aspects of obtaining funds in Copenhagen does the user need?' | Generate questions: 'What are the different aspects of obtaining funds in Copenhagen that the user might want to know?' | Ask for clarity: 'Could you specify the information you need about obtaining funds in Copenhagen?' |
+| **Analyze** | Identify the needed information: 'What specifics are needed to understand the process of obtaining funds in Copenhagen?' | Highlight gaps: 'What information am I missing to fully understand how to obtain funds in Copenhagen?' | Suggest research: 'What resources could help fill the knowledge gaps about obtaining funds in Copenhagen?' | Proceed with research: 'Let's gather more details about obtaining funds in Copenhagen' |
+| **Brainstorm** | Define brainstorming goal: 'We need to explore all potential methods for obtaining funds in Copenhagen' | Analyze options: 'What are the limitations of the methods I've brainstormed for obtaining funds in Copenhagen?' | Generate alternatives: 'What other methods might exist for obtaining funds in Copenhagen?' | Present options: 'Here are some potential methods for obtaining funds in Copenhagen' |
+| **Act** | Define action goal: 'We need to understand the practical steps to obtain funds in Copenhagen' | Identify obstacles: 'What challenges might the user encounter while obtaining funds in Copenhagen?' | Develop strategies: 'What are possible strategies to circumvent the challenges of obtaining funds in Copenhagen?' | Provide instructions or info: 'Here are some steps you can follow to obtain funds in Copenhagen...' |
+
+Upon completing the matrix, consolidate all entries from the 'Act' column into a final list to present to the user. Remember, all outputs should directly address the user in the form of questions, directives, or informative statements.
+
+———
+
+Your task involves completing a Chain of Thought Matrix using the Understand-Analyze-Generate-Refine (UAGR) model. The UAGR model involves four iterative steps:  
+
+In the 'Understand' stage, clearly state the goal or aim given to you.  
+
+In the 'Analyze' stage, identify any missing information or gaps in your knowledge required to achieve the aim. Consider potential obstacles or limitations.
+
+In the 'Generate' stage, come up with as many unique options or possibilities as possible to address the issues identified in 'Analyze'. Brainstorm broadly without judgment.
+
+In the 'Refine' stage, evaluate the options generated and determine the most promising approaches. Identify any remaining issues or concerns.  
+
+You will cycle through the UAGR model, updating your understanding and options over multiple iterations. Provide responses addressing the user at each stage of the cycle in the form of:  
+
+- Questions: Asking for clarification or additional details  
+- Statements: Sharing information, options, or next steps
+- Imperatives: Providing instructions or commands to move forward
+
+Here is a template to get started:
+
+|   | Understand | Analyze | Generate | Refine | 
+|---|:---:|:---:|:---:|---:|
+|**Understand**| State the goal: ||||
+|**Analyze**  |      |Identify knowledge gaps: |||      
+|**Generate**     |       |         |Brainstorm options: ||  
+|**Refine**        |       |       |      |Evaluate options:|  
+
+For each stage of the matrix, you must fill out your understanding, analysis, generation, and refinement of that stage's goal. For example:
+
+|   | Understand        | Analyze  | Generate | Refine            |  
+|---|:---:|:---:|:--:|---:|  
+|**Understand**| State the goal: 'The goal is to'...   ||||     
+|**Analyze**|      |Identify knowledge gaps: 'To analyze the goal, I need to know...'   |||  
+|**Generate**|       |         |Brainstorm options: 'Possible ways to achieve the goal include...'||       
+|**Refine**|       |       |Evaluate options: 'The best options for achieving the goal seem to be...'|  
+
+Here is an example of the UAGR matrix filled out left to right, top to bottom with every cell completed:
+
+|   | Understand | Analyze             | Generate                     | Refine                  |  
+|---|:---:|:---:|:---:|---:|
+|**Understand**| State the goal: The goal is to plan a vacation.||||  
+|**Analyze**|Understand analysis: To analyze planning a vacation, I need to know things like budget, dates, destination preferences.   |Identify knowledge gaps: I need more details on budget, preferred destinations and dates.|||     
+|**Generate**|Understand generation: To generate options, I need to know possible destinations, accommodations, transportation within the budget and dates. |Analyze generation: The options generated will depend on availability within the budget and dates.||Brainstorm options: Possible destinations include beach, mountain, city. Accommodation options include hotels, hostels, Airbnbs. Transportation options include flying, driving, public transit.||
+|**Refine**|Understand refinement: To refine options, I need to compare them based on preferences like relaxation, adventure, culture to determine the best match for the goal.   |Analyze refinement: Some options may exceed the budget or availability for the given dates.   |Generate refinement: Combining top options for destinations and accommodations within the budget and based on preferences.   |Evaluate options: The best options for a vacation within the budget and dates are: Beach destination flying to location and staying in an Airbnb or budget-friendly hotel. Finalize details on location, reserve travel and accommodations.| 
+  
+For each stage, you filled out your understanding, analysis, generation, and refinement of how to complete that stage towards achieving the overall goal of planning a vacation. The end result is a single cell in the matrix that provides a refined solution based on the full analysis and collaboration represented in each row of the matrix.
+
+The key steps are:
+
+1. State the goal in the top left cell 
+2. Fill out each cell from left to right, progressing row by row down the matrix  
+3. For each stage, demonstrate your understanding, analysis, generation of options, and refinement of that stage     
+4. Provide a final refined solution or option in the bottom right cell  
+
+Please let me know if this example and set of instructions are helpful in clarifying how to complete the full UAGR matrix. The main points are to address each step of the model for each stage, show your work and thinking in every cell of the matrix, and end with a single refined solution in the final cell. I am happy to provide any other examples or guidance needed to master this collaborative thinking process. YOU MUST COMPLETE EVERY CELL IN THE MATRIX AND NOT SKIP SOME!
+
+The task is: creating a UI for a notebook-style app/website for benchmarking a large language model’s output and responses.
+
+"""
+
+model_output = """
+
+Here's how I would approach this task using the UAGR model:
+
+|   | Understand | Analyze             | Generate                     | Refine                  |  
+|---|:---:|:---:|:---:|---:|
+|**Understand**| State the goal: The goal is to design a user interface (UI) for a notebook-style app/website that allows for benchmarking the output and responses of a large language model.||||  
+|**Analyze**|Understand analysis: To analyze the goal, I need to know the key features that the UI should support, such as input methods, output display, comparison tools, and benchmarking metrics. |Identify knowledge gaps: I need more details about the specific benchmarking metrics to be used, the preferred interaction style of the users, and any existing design standards or constraints for this app/website.|||     
+|**Generate**|Understand generation: To generate options, I need to know possible designs that support easy input, clear display of the model's output, comparison with benchmarks, and easy understanding of the results.|Analyze generation: The options generated will need to balance ease of use, clarity, comprehensibility, and aesthetic appeal, while also fitting within any existing design constraints.||Brainstorm options: Possible designs might include an interactive console for input and output, graphical displays of benchmark comparisons, tooltips or guides explaining benchmarking metrics, etc.|
+|**Refine**|Understand refinement: To refine options, I need to compare them based on factors like usability, comprehensibility, fit with design constraints, and potential development complexity.   |Analyze refinement: Some design options may be more complex to implement or may not fit well with existing design standards. Others may be unclear or confusing for users.   |Generate refinement: Select the most promising designs and refine them to better meet the goals, possibly by combining features from different initial designs.   |Evaluate options: The best options for the UI design will be ones that meet the needs for input, output, comparison, and understanding, that fit within the design constraints, and that are feasible to implement. We could then proceed with developing a prototype based on the chosen design(s).|
+
+To proceed with this task, I would ask you the following:
+
+1. Could you provide more details about the specific benchmarking metrics that users will need to understand?
+2. What are the main user interaction styles that the app/website should support?
+3. Are there any existing design standards or constraints that we should adhere to for this app/website? 
+
+Based on your answers to these questions, I could then provide more specific design options for the UI.
+
+"""
+
+# creation variation set
+
+prompt_var = []
+
+# store repeated calls with array of response variations
+
+PERFORMANCE = {input: [] for input in prompt_var}
+
+# NEXT-ACTION:
+
+# 1. WRITE NEW PROMPT VARIATIONS
+
+# 2. PROMPT-FACTORIZE INTO PIECES; TEST DIF. CONFIGURATIONS
+
+# 3. USE PROMPT ENHANCEMENT TECHNIQUES LIKE PROMPT-BOOSTING: https://arxiv.org/abs/2304.05970
+
+
+
+
+
+
+
+
+
